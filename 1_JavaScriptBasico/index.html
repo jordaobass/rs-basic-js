@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Java script</title>
+</head>
+<body>
+
+</body>
+
+<script>
+    var nome = "jonathan";
+    var idade= 23;
+    var peso  = 120;
+    var humano = true;
+
+    var arrayPessoa = ['j','b']
+
+    var pessoa =
+        {
+            nome : "jonathan",
+            idade : 23 ,
+            peso  : 120
+        };
+
+
+    console.log(pessoa.nome)
+    console.log(arrayPessoa[1])
+
+
+    function  soma( numero1 , numero2 ) {
+
+        var resultado = numero1  + numero2
+        return resultado;
+    }
+
+
+
+
+
+    resultado = soma(1,2)
+    console.log(resultado)
+
+
+    function ternario()
+    {
+        return (1===1) ? "true" : "false"
+    }
+
+
+    console.log(ternario)
+
+
+    function exibeAlgo()
+    {
+        console.log("testa set interval ")
+    }
+
+    function exibeTimeOut()
+    {
+        console.log("teste timeout")
+    }
+
+ //   setInterval(exibeAlgo, 1000)
+
+    setTimeout(exibeTimeOut);
+
+
+</script>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <input name="nome">
+
+    <button class="botao"> click para testar </button>
+</div>
+
+<script>
+
+    var inputelement = document.querySelector('input[name=nome]')
+    var btnElement = document.querySelector('button.botao');
+
+    btnElement.onclick = function  ()
+    {
+        var text = inputelement.value
+    //    alert("botao clicado")
+
+        inputelement.value = btnElement.innerHTML;
+    }
+
+</script>
+
+</body>
+</html>

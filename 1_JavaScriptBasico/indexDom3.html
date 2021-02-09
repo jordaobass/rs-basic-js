@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <input name="nome">
+
+    <button class="botao"> click para testar </button>
+</div>
+</body>
+
+<script>
+    var linkElement = document.createElement('a');
+    linkElement.setAttribute("href" , "www.jonathanschenker.com.br");
+
+    var textElement = document.createTextNode('acesse meu site');
+
+    linkElement.appendChild(textElement)
+    var containerElement = document.querySelector('#app')
+    containerElement.appendChild(linkElement);
+
+    var inputElement = document.querySelector('#nome');
+    containerElement.removeChild(inputElement);
+
+</script>
+</html>
